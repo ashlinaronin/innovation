@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Arbutus+Slab" rel="stylesheet">
+  <style>
+    body {
+      background: white;
+      padding: 0;
+      margin: 0;
+    }
+
+    .blend {
+      mix-blend-mode: exclusion;
+      color: white;
+      text-align: center;
+      height: 500px;
+      width: 500px;
+      background-image: url('images/shopping.webp'), url('images/Women-s-Crop-Seamless-Yoga-Pants-Power-Flex-Fitness-Gym-Leggings-Jogging-Squats-Capris-High-Waist.jpg');
+      background-blend-mode: overlay, luminosity;
+      background-position: center;
+      background-attachment: fixed;
+      animation-duration: 3s;
+      animation-name: musko;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      display: flex;
+
+    }
+
+    a {
+      font-family: 'Arbutus Slab', serif;
+      font-size: 80px;
+      padding: 0;
+      margin: 0;
+      background: transparent;
+      border: none;
+      text-decoration: none;
+      color: black;
+    }
+
+    .video {
+      mix-blend-mode: soft-light;
+      background: white;
+      pointer-events: none;
+      animation: spin 10s ease-in alternate infinite;
+    }
+
+    @keyframes musko {
+      from {
+        background-position-x: -30%;
+      }
+
+      to {
+        background-position-x: 70%;
+      }
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg) scale(1.0);
+      }
+
+      to {
+        transform: rotate(720deg) scale(0.1);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="blend">
+  <iframe class="video" width="500" height="500" src="https://www.youtube.com/embed/4udQP_OG1Ps?controls=0&amp;start=41&autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <a href="bean.html">
+    Make. Them. Fast. Bean.
+  </a>
+</div>
+
+</body>
+</html>
